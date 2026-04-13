@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "Jared Flores",
+  "type": "module",
+  "main": "./src/server.ts",
+  "scripts": {
+    "build": "tsup ./src/server.ts --platform=node --target=node22 --format=esm --out-dir dist --clean",
+    "dev": "tsx ./src/server.ts",
+    "start": "node ./dist/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
